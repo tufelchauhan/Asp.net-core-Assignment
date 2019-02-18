@@ -1,0 +1,16 @@
+﻿@page "{id:int}"
+@model MessageBoard.Pages.Board.AddCommentModel
+@{
+    ViewData["Title"] = "AddComment";
+}
+
+<h2>Add Comment</h2>
+
+<form class="panel panel-default">
+    <div class="form-group">        
+        <label>Write Your Comment Here</label>
+        <textarea class="form-control" name="CommentText"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Comment</button>
+</form>
+

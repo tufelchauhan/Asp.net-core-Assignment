@@ -1,0 +1,32 @@
+﻿
+@page
+@using MessageBoard
+@model MessageBoard.Pages.Board.MessageListModel
+@{
+    ViewData["Title"] = "MessageList";
+}
+<h2>MessageList</h2>
+
+<div class="panel panel-default">
+    <div class="panel" align="center">
+        <a class="btn btn-primary" asp-page=".\AddMessage">Add Message</a>
+    </div>
+    <div class="panel panel-default">
+        <form>
+            <table class="table">
+                @foreach (var message in Model.MessagesSummary)
+                {
+                    <tr>
+                        <td>Id: @message.Id</td>
+                        <td>Text: @message.Text</td>
+                        <td><a class="btn btn-primary" asp-route-id='@message.Id'>Like @message.LikesCount</a></td>
+                        <td><a class="btn btn-primary" asp-route-id='@message.Id' asp-page=".\Comments">Comments @message.CommentsCount</a></td>
+                        <td><a class="btn btn-primary" asp-route-id='@message.Id' asp-page=".\AddComment">Add Comment</a></td>
+                    </tr>
+                }
+            </table>
+        </form>
+    </div>
+</div>
+
+

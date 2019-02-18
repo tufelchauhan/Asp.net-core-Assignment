@@ -1,0 +1,15 @@
+﻿@page
+@model MessageBoard.Pages.Board.AddMessageModel
+@{
+    ViewData["Title"] = "AddMessage";
+}
+<h2>Add Message</h2>
+<form method="post" class="panel panel-default">
+    <div class="form-group">
+        <label>Write Your Message Here</label>
+        <textarea class="form-control" name="Messagetext"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Message</button>
+</form>
+
+

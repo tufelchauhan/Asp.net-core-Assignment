@@ -1,0 +1,22 @@
+﻿@page
+@using MessageBoard
+@model MessageBoard.Pages.Board.CommentsModel
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<h2>Comments</h2>
+
+<div class="panel panel-default">
+    <form>
+        <table class="table">
+            @foreach (var comment in Model.Comments)
+            {
+                <tr>
+                    <td>@comment.CommentText</td>
+                </tr>
+            }
+            <tr><td><a class="btn btn-primary" asp-page=".\AddComment">Add Message</a></td></tr>
+        </table>
+    </form>
+</div>
