@@ -1,0 +1,26 @@
+<p>
+  messagelist works!
+</p>
+<div class="table">
+  <button class="btn btn-primary" (click)='AddMessage()'>Add Message</button>
+</div>
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Message</th>
+      <th>Likes</th>
+      <th>Comments</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+      <td>{{ message.id }}</td>
+      <td>{{ message.text }}</td>
+      <td><button class="btn btn-primary" (click)='likeMessage(message.id)'>Likes {{ message.likesCount }}</button></td>
+      <td><button class="btn btn-primary" (click)='GetComments(message.id)'>Comments {{ message.commentsCount }}</button></td>
+      <td><button class="btn btn-primary" (click)='AddComment(message.id)'>Add Comment</button></td>
+    </tr>
+  </tbody>
+</table>

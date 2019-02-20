@@ -1,0 +1,15 @@
+<p>
+  addmessage works!
+</p>
+<form method="post" class="panel panel-default">
+    <div class="form-group">
+        <label>Write Your Message Here</label>
+        <textarea class="form-control" name="Messagetext" [(ngModel)]="messageText"></textarea>
+    </div>
+  <table>
+    <tr>
+      <td><button type="submit" class="btn btn-primary" (click)="addMessage()">Add Message</button></td>
+      <td><button class="btn btn-primary" (click)='Back()'>Back</button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,15 @@
+<p>
+  addcomment works!
+</p>
+<form class="panel panel-default">
+    <div class="form-group">        
+        <label>Write Your Comment Here</label>
+        <textarea class="form-control" name="CommentText" [(ngModel)]="text"></textarea>
+    </div>
+  <table>
+    <tr>
+      <td><button type="submit" class="btn btn-primary" (click)="addComment()">Add Comment</button></td>
+      <td><button class="btn btn-primary" (click)='Back()'>Back</button></td>
+    </tr>
+  </table>
+</form>
