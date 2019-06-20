@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SportsAppMVC.Models.TestResult>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th><a asp-action="AddorEdit" class="btn btn-outline-success">Add Result</a></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+            <td>
+                <a asp-action="AddorEdit" asp-route-id="@item.ResultId" class=""><span class="glyphicon glyphicon-edit"></span>&nbsp;Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a asp-action="Delete" asp-route-id="@item.ResultId" onclick="return confirm('Are you sure to delete this test?')"><span class="glyphicon glyphicon-trash"></span>&nbsp;Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

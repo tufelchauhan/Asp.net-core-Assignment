@@ -1,0 +1,44 @@
+﻿@model SportsAppMVC.Models.User
+
+@{
+    ViewData["Title"] = "Users List";
+}
+
+<h4>User Add Form</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddorEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId">
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserType" class="control-label"></label>
+                <input asp-for="UserType" class="form-control" />
+                <span asp-validation-for="UserType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @if (Model.UserId == 0)
+                {
+                    <input type="submit" value="Add" class="btn btn-primary" />
+                }
+                else
+                {
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                }
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
