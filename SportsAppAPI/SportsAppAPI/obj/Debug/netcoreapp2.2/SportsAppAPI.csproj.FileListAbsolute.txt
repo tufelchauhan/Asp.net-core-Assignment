@@ -1,0 +1,14 @@
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\bin\Debug\netcoreapp2.2\SportsAppAPI.deps.json
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\bin\Debug\netcoreapp2.2\SportsAppAPI.runtimeconfig.json
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\bin\Debug\netcoreapp2.2\SportsAppAPI.runtimeconfig.dev.json
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\bin\Debug\netcoreapp2.2\SportsAppAPI.dll
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.csprojAssemblyReference.cache
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.csproj.CoreCompileInputs.cache
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.RazorAssemblyInfo.cache
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.RazorAssemblyInfo.cs
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.AssemblyInfoInputs.cache
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.AssemblyInfo.cs
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.RazorTargetAssemblyInfo.cache
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\bin\Debug\netcoreapp2.2\SportsAppAPI.pdb
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.dll
+C:\Users\tufel\source\repos\SportsAppAPI\SportsAppAPI\obj\Debug\netcoreapp2.2\SportsAppAPI.pdb
